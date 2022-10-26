@@ -1,11 +1,13 @@
-const Jacob = ["hotdog", "burger", "fries"];
+let Jacob = ["hotdog", "burger", "fries", "soda"];
 
-Jacob.forEach((food) => console.log(food));
+// Jacob.forEach((food) => console.log(food));
 
-const Kyle = ["rice", "noodles", "eggs"];
+let Kyle = ["rice", "noodles", "eggs", "lettuce"];
 
-Jacob.forEach((food2) => console.log(food2));
+// Kyle.forEach((food2) => console.log(food2));
 
-const Nick = ["chicken", "beef", "pork"];
+let Nick = ["chicken", "beef", "pork", "cookie"];
 
-Jacob.forEach((food3) => console.log(food3));
+// Nick.forEach((food3) => console.log(food3)); }
+const foods = [{ Jacob, Kyle, Nick }];
+console.log(foods);
