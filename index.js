@@ -6,7 +6,9 @@ let Kyle = ["rice", "noodles", "eggs", "lettuce"];
 
 // Kyle.forEach((food2) => console.log(food2));
 
-let Nick = ["chicken", "beef", "pork", "cookie"];
+let Nick = ["
+
+chicken", "beef", "pork", "cookie"];
 
 // Nick.forEach((food3) => console.log(food3)); }
 const foods = [{ Jacob, Kyle, Nick }];
