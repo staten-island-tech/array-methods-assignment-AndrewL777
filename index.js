@@ -1,61 +1,63 @@
 const foods = [
   {
-    food: "chicken",
+    item: "chicken",
     tasty: "tasty",
     cheap: "cheap",
-    vegan: "not vegan",
+    habitat: ["land"],
   },
   {
-    food: "lobster",
+    item: "lobster",
     tasty: "tasty",
     cheap: "expensive",
-    vegan: "not vegan",
+    habitat: ["sea"],
   },
   {
-    food: "french fries",
+    item: "beef",
     tasty: "tasty",
     cheap: "cheap",
-    vegan: " vegan",
+    habitat: ["land"],
   },
   {
-    food: "ice cream",
+    item: "fish",
     tasty: "tasty",
     cheap: "cheap",
-    vegan: "not vegan",
+    habitat: ["sea"],
   },
   {
-    food: "grapefruits",
+    item: "lamb",
     tasty: "not tasty",
     cheap: "cheap",
-    vegan: "vegan",
+    habitat: ["land"],
   },
   {
-    food: "wagyu beef",
-    tasty: "tasty",
-    cheap: "expensive",
-    vegan: "not vegan",
-  },
-  {
-    food: "noodles",
+    item: "duck",
     tasty: "tasty",
     cheap: "cheap",
-    vegan: "vegan",
+    habitat: ["land,sea"],
   },
   {
-    food: "eggs",
+    item: "crabs",
     tasty: "tasty",
     cheap: "cheap",
-    vegan: "not vegan",
+    habitat: ["land,sea"],
   },
   {
-    food: "oysters",
+    item: "shrimp",
+    tasty: "tasty",
+    cheap: "cheap",
+    habitat: ["sea"],
+  },
+  {
+    item: "oysters",
     tasty: "not tasty",
     cheap: "expensive",
-    vegan: "not vegan",
+    habitat: ["land,sea"],
   },
 ];
-foods.foreach((fd) => {
-  fd.food.forEach((foods) => {
-    console.log(foods);
+
+foods.forEach((animal) => {
+  console.log(animal.item);
+  animal.habitat.forEach((list) => {
+    console.log(list);
   });
 });
