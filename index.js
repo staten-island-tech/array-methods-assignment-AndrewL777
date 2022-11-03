@@ -11,7 +11,7 @@ const people = [
     animal: "lobster",
     color: "red",
     device: "phone",
-    locker: ["53"],
+    locker: ["54"],
   },
   {
     name: "Jake",
@@ -25,7 +25,7 @@ const people = [
     animal: "fish",
     color: "orange",
     device: "phone",
-    locker: ["1"],
+    locker: ["16"],
   },
   {
     name: "Link",
@@ -53,7 +53,7 @@ const people = [
     animal: "shrimp",
     color: "black",
     device: "macbook",
-    locker: ["73"],
+    locker: ["42"],
   },
   {
     name: "Hunter",
@@ -64,16 +64,16 @@ const people = [
   },
 ];
 
+
 people.forEach((person) => {
-  console.log(person.name);
-  person.locker.forEach((list) => {
-    console.log(list);
-  });
-});
-const result = people.filter(locknumber);
-{
-  function locknumber(locker) {
-    return locker >= 100;
-  }
-}
-console.log(result);
+    console.log(person.name);
+    person.locker.forEach((list) => {
+      console.log(list);
+    });
+  }); 
+
+const abovehundred = people.filter(function(person){
+  return person.locker > 100;
+})
+console.log(abovehundred)
+
